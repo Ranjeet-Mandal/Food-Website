@@ -1,0 +1,109 @@
+.cart{
+    margin-top: 100px;
+    background-color: #f0f4f8;
+}
+.cart-item-titles{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    font-size: max(1.5vw ,12px);
+    color: grey;
+}
+.cart-item-heading{
+    font-size: 1.2rem;
+}
+.cart-items-item{
+    margin:  10px 0;
+    color: black;
+}
+.cart-items-item img{
+    width: 60px;
+    object-fit: contain;
+}
+.cart hr{
+    border: none;
+    height: 1px;
+    background-color: #e2e2e2;
+}
+.cart-items-item .cursor{
+    cursor: pointer;
+}
+.cart-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap:max(12vw ,20px);
+}
+.cart-totals{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+.cart-totals hr{
+    margin: 10px 0px;
+}
+.cart-totals button{
+    color: white;
+    background-color: tomato;
+    border: none;
+    width: max(15vw, 200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cart-promocode{
+    flex: 1;
+
+}
+.cart-promocode p{
+    color: #555;
+    font-size: 1rem;
+}
+.cart-promocode-input{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.cart-promocode-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+.cart-promocode-input button{
+    width: max(10vw, 150px);
+    padding: 12px 6px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media(max-width:750px){
+    .cart-bottom{
+        flex-direction: column-reverse;
+    }
+    .cart-promocode{
+        justify-content: start;
+    }
+}
+@media(max-width:600px){
+    .cart-item-heading{
+        font-size: 15px;
+    }
+    .cart-items-item img{
+        width: 50px;
+    }
+}

@@ -1,0 +1,96 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.navbar .logo{
+    width: 150px;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    color: #49557e;
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.navbar button{
+    font-size: 16px;
+    padding: 10px 30px;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    background: transparent;
+    color: #49557e;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background-color: #fff4f2;
+}
+.navbar .active{
+    border-bottom: 2px solid #49557e;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+.navbar-search-icon{
+    position: relative;
+    cursor: pointer;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    min-height: 10px;
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: tomato;
+   top: -8px;
+   right: -7px;
+}
+
+/* media Quary */
+@media(max-width:950px){
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-menu{
+        font-size: 16px;
+        gap: 15px;
+    }
+    .navbar-right{
+        gap: 35px;
+    }
+}
+@media(max-width:850px){
+    .navbar .logo{
+        width: 135px;
+    }
+    .navbar button{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .navbar-search-icon img{
+        width: 25px;
+        height: 25px;
+    }
+    .navbar-right img{
+        width: 24px;
+        height: 24px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+
+}
+@media(max-width:790px){
+    .navbar-menu{
+        display: none;
+        .navbar-search-icon .dot{
+            min-height: 8px;
+        }
+    }
+}
